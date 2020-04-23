@@ -1,7 +1,7 @@
 {
-  "name": "plenteumwebwallet",
+  "name": "kryptokronawebwallet",
   "version": "1.0.0",
-  "description": "Fully client side web wallet for Plenteum",
+  "description": "Fully client side web wallet for kryptokrona",
   "main": "index.js",
   "dependencies": {
     "localforage": "^1.7.3",
@@ -11,12 +11,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plenteum/plnteum-webwallet-js.git"
+    "url": "git+https://github.com/kryptokrona/kryptokrona-web-wallet.git"
   },
-  "author": "gnock & Plenteum",
+  "author": "gnock & kryptokrona",
   "license": "BSD-3",
   "bugs": {
-    "url": "https://github.com/plenteum/plenteum-webwallet-js/issues"
+    "url": "https://github.com/kryptokrona/kryptokrona-web-wallet/issues"
   },
-  "homepage": "https://github.com/plenteum/plenteum-webwallet-js#readme"
+  "homepage": "https://github.com/kryptokrona/kryptokrona-web-wallet/blob/master/README.md"
 }
