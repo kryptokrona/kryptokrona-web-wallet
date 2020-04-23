@@ -1,7 +1,7 @@
 let global : any = typeof window !== 'undefined' ? window : self;
 global.config = {
     //apiUrl: typeof window !== 'undefined' && window.location ? window.location.href.substr(0, window.location.href.lastIndexOf('/') + 1) + 'api/' : 'https://wallet.kryptokrona.com/api/',
-    apiUrl: 'https://pool.kryptokrona.se/', //temporary testing front end
+    apiUrl: 'https://wallet.kryptokrona.se/', //temporary testing front end
 	mainnetExplorerUrl: "http://explorer.kryptokrona.com",
     coinUnitPlaces: 2,
     coinDisplayUnitPlaces: 2,
