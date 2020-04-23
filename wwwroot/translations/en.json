@@ -107,7 +107,7 @@
 		"emptyWallet": "You currently have no funds in this wallet.",
 		"waitSync": "Please wait until the wallet is updated",
 		"beReallyPatient": "The initial setup can take some time...",
-		"getPLEAddress": "Receive PLE"
+		"getPLEAddress": "Receive XKR"
 	  },
 	  "txDetails":{
 		"title":"Transaction details",
@@ -166,7 +166,7 @@
 		}
 	  },
 	  "disclaimerBlock":{
-		"title":"Risk of Using KryptokronaWallet",
+		"title":"Risk of Using Kryptokrona Wallet",
 		"content":"KryptokronaWallet is a web-based interface. It helps you use Kryptokrona without running a full Kryptokrona node. <br/>We recommend you treat KryptokronaWallet like you will treat your actual wallet."
 	  }
 	},
@@ -203,7 +203,7 @@
 	  }
 	},
 	"sendPage":{
-	  "title":"Send PLE",
+	  "title":"Send XKR",
 	  "sendBlock":{
 		"address":{
 		  "label":"Destination address",
@@ -270,7 +270,7 @@
 	  }
 	},
 	"receivePage":{
-	  "title":"Receive PLE",
+	  "title":"Receive XKR",
 	  "receiveBlock":{
 		"address":{
 		  "title":"Your address to receive funds:",
@@ -298,7 +298,7 @@
 	},
 	"miningPage":{
 	  "title":"Mining information",
-	  "subtitle":"Support the network by mining and be rewarded with PLE",
+	  "subtitle":"Support the network by mining and be rewarded with XKR",
     "contentBlock": {
       "title": "How to get started mining",
       "intro": "Mining helps decentralise the network and allows you to earn Kryptokrona. There is no need for specialist equipment to mine Kryptokrona.",

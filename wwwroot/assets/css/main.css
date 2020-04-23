@@ -629,7 +629,7 @@ body.transparent #copyright {
   min-height: 90vh;
   position: relative;
   text-align: center;
-  background: rgb(1, 33, 55);
+  background: rgb(1, 38, 63);
   background-position: center center;
   background-size: cover;
   margin-bottom: 160px; }
@@ -1108,7 +1108,7 @@ body {
 .btn.primary {
   color: #90f2ff8c;
   border: 2px solid #90f2ff8c;
-  background-color: rgb(1, 33, 55); }
+  background-color: rgb(1, 38, 63); }
 
 .btn.primary.basic {
   color: rgb(1, 33, 55);
@@ -1122,7 +1122,7 @@ body {
   border-color: #1678c2; }
 
 .btn.teal {
-  background-color: #00b5ad;
+  background-color: rgb(1, 38, 63);
   color: #fff; }
 
 .btn.teal:hover {

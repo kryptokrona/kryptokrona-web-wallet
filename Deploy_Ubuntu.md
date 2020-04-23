@@ -70,7 +70,7 @@ then paste the following into the file:
 
 server {
     listen        80;
-    server_name   wallet.plenteum.com;
+    server_name   wallet.kryptokrona.se;
     location / {
         proxy_pass         http://localhost:5000;
         proxy_http_version 1.1;
@@ -98,6 +98,7 @@ Save the file
 Start your Plenteumd node. The Plenteum daemon must be running with the following cli arguments
 
 	'./Plenteumd --enable-blockexplorer --enable-cors "*" --rpc-bind-ip 0.0.0.0'
+    './kryptokrona --enable-cors=* --enable-blockexplorer --rpc-bind-ip=0.0.0.0'
 
 ensure your node is fully sync'd with the Plenteum network before you proceed to the next step.
 
