@@ -307,7 +307,7 @@ define(["require", "exports", "../TransactionsExplorer", "../Transaction", "../M
                 //old way, hitting cache
                 if (localNode === '') {
                     $.ajax({
-                        url: config.apiUrl + "sync",
+                        url: config.apiUrl + "getwalletsyncdata",
                         method: 'POST',
                         dataType: "json",
                         contentType: 'application/json',
