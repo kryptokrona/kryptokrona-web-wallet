@@ -97,8 +97,7 @@ Save the file
 
 Start your Plenteumd node. The Plenteum daemon must be running with the following cli arguments
 
-	'./Plenteumd --enable-blockexplorer --enable-cors "*" --rpc-bind-ip 0.0.0.0'
-    './kryptokrona --enable-cors=* --enable-blockexplorer --rpc-bind-ip=0.0.0.0'
+	'./kryptokrona --enable-cors=* --enable-blockexplorer --rpc-bind-ip=0.0.0.0'
 
 ensure your node is fully sync'd with the Plenteum network before you proceed to the next step.
 
