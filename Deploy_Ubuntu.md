@@ -70,7 +70,7 @@ then paste the following into the file:
 
 server {
     listen        80;
-    server_name   wallet.kryptokrona.se;
+    server_name   *;
     location / {
         proxy_pass         http://localhost:5000;
         proxy_http_version 1.1;
@@ -123,3 +123,5 @@ Then, from the "publish" diretory above, run:
 	dotnet WebWallet.dll
 
 Now, browse to your spiffy new webwallet :-)
+
+./kryptokrona --enable-cors="*" --enable-blockexplorer --rpc-bind-ip=0.0.0.0 --rpc-bind-port=11898
