@@ -130,7 +130,7 @@ Now, browse to your spiffy new webwallet :-)
 server {
     listen        80;
     server_name   wallet.kryptokrona.se;
-    location / {
+    location /api {
         proxy_pass         http://localhost:5000;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
@@ -140,20 +140,6 @@ server {
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
-    location /api {
-        proxy_pass         http://localhost:11898;
-        proxy_http_version 1.1;
-        proxy_set_header   Upgrade $http_upgrade;
-        proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $host;
-        proxy_cache_bypass $http_upgrade;
-        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header   X-Forwarded-Proto $scheme;
-    }
-    access_log /spool/vhost/logs/$host 
-    log_format combined '$proxy_host - $upstream_addr - $remote_addr - $remote_user [$time_local] '
-                    '"$request" $status $body_bytes_sent '
-                    '"$http_referer" "$http_user_agent"';
 }
 
 <VirtualHost *:80>
@@ -186,3 +172,19 @@ server {
         ProxyPassReverse /api http://127.0.0.1:11898
 </VirtualHost>
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+  GNU nano 2.9.3                                                                                              default                                                                                                         
+server {
+    listen        80;
+    server_name   wallet.kryptokrona.se;
+    location / {
+        proxy_pass         http://localhost:38090;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+       }
+}
