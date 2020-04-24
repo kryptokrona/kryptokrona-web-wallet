@@ -234,15 +234,15 @@ export class WalletWatchdog {
         }
 
         // console.log('checking');
-        this.explorer.getHeight().then(function (getheight) {
+        this.explorer.getHeight().then(function (height) {
             //console.log("loading height:", self.lastBlockLoading,height);
-            if (getheight > self.lastMaximumHeight) self.lastMaximumHeight = getheight;
-            if (self.lastBlockLoading !== getheight) {
+            if (height > self.lastMaximumHeight) self.lastMaximumHeight = height;
+            if (self.lastBlockLoading !== height) {
                 let previousStartBlock = self.lastBlockLoading;
                 let startBlock = Math.floor(self.lastBlockLoading / 100) * 100;
                 // console.log('=>',self.lastBlockLoading, endBlock, height, startBlock, self.lastBlockLoading);
-                console.log('load block from ' + startBlock + ' (actual block: ' + previousStartBlock + ') at height :' + getheight);
-                if (previousStartBlock <= getheight) {
+                console.log('load block from ' + startBlock + ' (actual block: ' + previousStartBlock + ') at height :' + height);
+                if (previousStartBlock <= height) {
                     self.explorer.getTransactionsForBlocks(previousStartBlock+1, self.wallet.options.localNode).then(function (transactions: RawDaemonTransaction[]) {
                         //to ensure no pile explosion
                         if (transactions.length > 0) {
@@ -253,7 +253,7 @@ export class WalletWatchdog {
                             }
                         }
                         self.processTransactions(transactions);
-                        if (self.lastBlockLoading < getheight - 1) {
+                        if (self.lastBlockLoading < height - 1) {
                             setTimeout(function () {
                                 self.loadHistory();
                             }, 1);// then try load history again... 
