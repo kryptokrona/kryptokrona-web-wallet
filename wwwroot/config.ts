@@ -8,10 +8,14 @@ global.config = {
 	txMinConfirms: 60,         
 	txCoinbaseMinConfirms: 120, 
 	addressPrefix: 2239254,
-	integratedAddressPrefix: 2239254,
-	feePerKB: new JSBigInt('0'), 
-	dustThreshold: new JSBigInt('1000000'),//used for choosing outputs/change - we decompose all the way down if the receiver wants now regardless of threshold
-	defaultMixin: 3, // default value mixins
+	integratedAddressPrefix: 0,
+    addressPrefixTestnet: 0,
+    integratedAddressPrefixTestnet: 0,
+    subAddressPrefix: 0,
+    subAddressPrefixTestnet: 0,
+    feePerKB: new JSBigInt('100'),//20^10 - for testnet its not used, as fee is dynamic.
+    dustThreshold: new JSBigInt('1'),//10^10 used for choosing outputs/change - we decompose all the way down if the receiver wants now regardless of threshold
+	defaultMixin: 7, // default value mixins
 	idleTimeout: 30,
 	idleWarningDuration: 20,
 	coinSymbol: 'XKR',

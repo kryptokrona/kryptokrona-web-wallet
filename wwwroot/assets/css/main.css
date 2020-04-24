@@ -902,7 +902,7 @@ body {
   font-size: 1.4rem;
   line-height: 21px;
   line-height: 1;
-  color: #000;
+  color: #90f2ff8c;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent; }
   @media (max-width: 767px) {
@@ -982,9 +982,10 @@ body {
   color: #90f2ff8c; }
 
 .panel.inline {
-  background: transparent;
+  background: rgb(1, 33, 55);
   padding: 40px 40px 32px 40px;
-  border: 1px solid #90f2ff8c;
+  color: #90f2ff8c;
+  border: none;
   box-shadow: none;
   -webkit-box-shadow: none; }
 
@@ -1049,19 +1050,19 @@ body {
   font-size: 1.65rem; }
 
 .message.error {
-  background-color: #fff6f6;
-  color: #9f3a38; }
+  background-color: #90f2ff8c;
+  color: #010041; }
 
 .message.warning {
-  background-color: #fffaf3;
-  color: #573a08; }
+  background-color: #90f2ff8c;
+  color: #010041; }
 
 /*=================BUTTONS====================*/
 .btn {
   text-decoration: none;
   background: #90f2ff8c none;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(1, 5, 70, 0.6);
   border: none;
   display: inline-block;
   font-weight: 400;
@@ -1102,7 +1103,7 @@ body {
   border: 2px solid #90f2ff8c; }
 
 .btn:hover {
-  background-color: #cacbcd;
+  background-color: #90f2ffbe;
   color: rgba(0, 0, 0, 0.8); }
 
 .btn.primary {
@@ -1425,13 +1426,13 @@ body {
   position: relative;
   width: 0;
   min-width: 2em;
-  background: #888;
+  background: #90f2ff8c;
   border-radius: .28571429rem;
   -webkit-transition: width .1s ease,background-color .1s ease;
   transition: width .1s ease,background-color .1s ease;
   height: 24px;
   line-height: 24px;
-  color: #90f2ff8c; }
+  color: black; }
 
 .progress .label {
   display: block; }
