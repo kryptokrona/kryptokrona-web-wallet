@@ -107,7 +107,7 @@
 		"emptyWallet": "You currently have no funds in this wallet.",
 		"waitSync": "Please wait until the wallet is updated",
 		"beReallyPatient": "The initial setup can take some time...",
-		"getPLEAddress": "Receive XKR"
+		"getXKRaddress": "Receive XKR"
 	  },
 	  "txDetails":{
 		"title":"Transaction details",
@@ -177,7 +177,7 @@
 		"title":"Webwallet",
 		"content":"If you want to help the development, help to pay for the servers, and like this app, please consider a donation: <br/><br/>"
 	  },
-	  "pleFundBlock":{
+	  "xkrFundBlock":{
 		"title":"Kryptokrona Dev fund",
 		"content":"To help Kryptokrona, you can donate at these addresses"
 	  }
