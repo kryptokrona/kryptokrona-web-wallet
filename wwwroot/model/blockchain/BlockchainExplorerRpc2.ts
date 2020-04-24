@@ -243,7 +243,7 @@ export class WalletWatchdog {
                 // console.log('=>',self.lastBlockLoading, endBlock, height, startBlock, self.lastBlockLoading);
                 console.log('load block from ' + startBlock + ' (actual block: ' + previousStartBlock + ') at height :' + height);
                 if (previousStartBlock <= height) {
-                    self.explorer.getTransactionsForBlocks(previousStartBlock).then(function (transactions: RawDaemonTransaction[]) {
+                    self.explorer.getTransactionsForBlocks(previousStartBlock+1, self.wallet.options.localNode).then(function (transactions: RawDaemonTransaction[]) {
                         //to ensure no pile explosion
                         if (transactions.length > 0) {
                             let lastTx = transactions[transactions.length - 1];
