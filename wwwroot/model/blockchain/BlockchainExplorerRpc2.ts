@@ -301,7 +301,7 @@ export class BlockchainExplorerRpc2 implements BlockchainExplorer {
         this.heightLastTimeRetrieve = Date.now();
         return new Promise<number>(function (resolve, reject) {
             $.ajax({
-                url: self.serverAddress + "getheight", //self.serverAddress to be replaced with local / public node setting
+                url: self.serverAddress + "height", //self.serverAddress to be replaced with local / public node setting
                 method: 'GET'
             }).done(function (raw: any) {
                 self.heightCache = parseInt(raw.height);
