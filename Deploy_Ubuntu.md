@@ -97,7 +97,7 @@ Save the file
 
 Start your Plenteumd node. The Plenteum daemon must be running with the following cli arguments
 
-	'./kryptokrona --enable-cors=* --enable-blockexplorer --rpc-bind-ip=0.0.0.0'
+	'./kryptokronad --enable-cors="*" --enable-blockexplorer --rpc-bind-ip=0.0.0.0'
 
 ensure your node is fully sync'd with the Plenteum network before you proceed to the next step.
 
@@ -124,7 +124,7 @@ Then, from the "publish" diretory above, run:
 
 Now, browse to your spiffy new webwallet :-)
 
-./kryptokrona --enable-cors="*" --enable-blockexplorer --rpc-bind-ip=0.0.0.0 --rpc-bind-port=11898
+./kryptokronad --enable-cors="*" --enable-blockexplorer --rpc-bind-ip=0.0.0.0 --rpc-bind-port=11898
 
 
 server {

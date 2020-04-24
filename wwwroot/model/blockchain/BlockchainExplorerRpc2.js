@@ -282,7 +282,7 @@ define(["require", "exports", "../TransactionsExplorer", "../Transaction", "../M
             this.heightLastTimeRetrieve = Date.now();
             return new Promise(function (resolve, reject) {
                 $.ajax({
-                    url: config.apiUrl + "height",
+                    url: config.apiUrl + "getheight",
                     method: 'GET'
                 }).done(function (raw) {
                     self.heightCache = parseInt(raw.height);
