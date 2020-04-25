@@ -988,12 +988,45 @@ body {
     border-radius: 10px;
     border: none;
     width: 55%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2);
+    -webkit-app-region: drag;
   }
 
   .crt .crtBox img{
     padding-left: 0;
     height: 60px;
   }
+
+  .crtBox:before, .crtBox:after {
+    display: block;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    
+    }
+    .crtBox:before {
+    width: 100%;
+    height: 2px;
+    z-index: 2147483649;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.75;
+    -webkit-animation: scanline 6s linear infinite;
+            animation: scanline 6s linear infinite;
+    }
+    .crtBox:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483648;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(51%, rgba(0, 0, 0, 0.3)));
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 51%);
+    background-size: 100% 4px;
+    -webkit-animation: crtBox 1s steps(60) infinite;
+            animation: crtBox 1s steps(60) infinite;
+    }
 
 .panel {
   background: #171416!important;
