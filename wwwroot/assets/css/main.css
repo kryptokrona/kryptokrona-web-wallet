@@ -69,6 +69,72 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+  .swal2-popup {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    color: #f5f5f5;
+    border-radius: .3125em;
+    background: #171416!important;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.swal2-popup .swal2-file, .swal2-popup .swal2-input, .swal2-popup .swal2-textarea {
+  width: 100%;
+  transition: border-color .3s,box-shadow .3s;
+  background: rgb(54, 54, 54);
+  border: 1px solid rgba(217, 217, 217, 0.397);
+  color: #f5f5f5;
+  border-radius: .1875em;
+  font-size: 1.125em;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.06);
+  box-sizing: border-box;
+}
+
+.swal2-popup .swal2-title {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  margin: 0 0 .4em;
+  padding: 0;
+  color: #f5f5f5!important;
+  font-size: 1.875em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.swal2-popup .swal2-styled.swal2-cancel {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color: #363636!important;
+  color: #f5f5f5!important;
+  font-size: 1.0625em;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color: #363636!important;
+  color: #f5f5f5!important;
+  font-size: 1.0625em;
+}
+.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+  background-color: #686868!important;
+  color: #fffafa!important;
+  background-image: none;
+}
+
+
 /* Standard Colours */
 /* Colour Variables */
 html {
@@ -280,7 +346,7 @@ body.menuHidden #page, body.menuDisabled #page {
 #copyright {
   text-align: left;
   padding: 100px 0;
-  color: #f5f5f5;
+  color: #f5f5f569;
   background-color: #171416!important;
   font-size: 14px;
   font-size: 1.4rem;
