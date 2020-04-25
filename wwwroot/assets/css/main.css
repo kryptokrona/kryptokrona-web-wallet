@@ -971,6 +971,30 @@ body {
 .body-content {
   padding-top: 30px; }
 
+  .crt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .crtBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #FBBF2E;
+    border-radius: 10px;
+    border: none;
+    width: 55%;
+  }
+
+  .crt .crtBox img{
+    padding-left: 0;
+    height: 60px;
+  }
+
 .panel {
   background: #171416!important;
   border-radius: 5px;

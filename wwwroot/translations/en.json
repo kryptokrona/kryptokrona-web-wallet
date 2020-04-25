@@ -63,7 +63,7 @@
 	  "github": "GitHub"
 	},
 	"homepage": {
-	  "mainTitle": "Secured Kryptokrona Wallet",
+	  "mainTitle": "Kryptokrona Web Wallet",
 	  "tagLine": "The simplest way to use Kryptokrona - anywhere and any time",
 	  "actions": {
 		"loadWallet": "Load my wallet",
