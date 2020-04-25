@@ -689,14 +689,16 @@ body.native .indexTab .mainBlock > .actions {
 
 .indexTab .mainBlock > .actions .btn {
   /*padding:3px;*/
-  background: #f5f5f5;
+  background: #363636;
+  color: #f5f5f5;
   margin-top: 0;
   margin-right: 20px; }
 
 .indexTab .mainBlock > .actions .btn.basic {
   background: none;
   color: #f5f5f5;
-  border-color: #f5f5f5; }
+  background: #363636;
+  border-color: none; }
 
 .indexTab .mainBlock > .actions .right {
   text-align: right;
@@ -1093,14 +1095,14 @@ body {
       line-height: 19.2px; } }
 
 .btn.basic {
-  background: none;
+  background: #363636;
   color: #f5f5f5;
-  border: 2px solid #f5f5f5; }
+  border: none; }
 
 .btn.basic:hover {
   background: none !important;
   color: #f5f5f5;
-  border: 2px solid #f5f5f5; }
+  border: none; }
 
 .btn:hover {
   background-color: #90f2ffbe;
@@ -1108,8 +1110,8 @@ body {
 
 .btn.primary {
   color: #f5f5f5;
-  border: 2px solid #f5f5f5;
-  background-color: #4a4a4a; }
+  border: none;
+  background: #363636; }
 
 .btn.primary.basic {
   color: #171416!important;
