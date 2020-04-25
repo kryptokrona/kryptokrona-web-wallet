@@ -255,14 +255,17 @@ export class WalletWatchdog {
                         self.processTransactions(transactions);
                         if (self.lastBlockLoading < height - 1) {
                             setTimeout(function () {
+                                console.log('Loading history..');
                                 self.loadHistory();
                             }, 1);// then try load history again... 
                         } else {
                             setTimeout(function () {
+                                console.log('Loading history.. 2');
                                 self.loadHistory();
                             }, 30000); // wait 30 seconds, then try load history again... 
                         }
                     }).catch(function () {
+                        console.log('Failed to load history');
                         setTimeout(function () {
                             self.loadHistory();
                         }, 30 * 1000);//retry 30s later if an error occurred
