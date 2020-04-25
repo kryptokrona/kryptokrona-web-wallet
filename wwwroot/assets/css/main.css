@@ -1264,7 +1264,7 @@ to {
 
 .panel a {
   text-decoration: none;
-  color: #111010; }
+  color: #f5f5f5; }
 
 .panel.inline {
   background: #4a4a4a;
@@ -1389,7 +1389,7 @@ to {
   border: none; }
 
 .btn:hover {
-  background-color: #4a4a4a;
+  background-color: #414141;
   color: #f5f5f5; }
 
   .indexTab .mainBlock > .actions .btn:hover{
@@ -1407,7 +1407,7 @@ to {
   border-color: #171416!important; }
 
 .btn.primary:hover {
-  background-color: #4a4a4a; }
+  background-color: #414141; }
 
 .btn.primary.basic:hover {
   color: #1678c2;
