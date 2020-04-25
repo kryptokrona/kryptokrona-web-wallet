@@ -11,7 +11,7 @@
 
 		<div class="panel inline" v-if="currentScanBlock+2 < blockchainHeight" >
 			<div class="progress" >
-				<div class="bar" :style="'width:'+((currentScanBlock+1)/blockchainHeight*100 | 0)+'%'" >{{(((currentScanBlock+1)/blockchainHeight*1000 | 0) / 10)}}%</div>
+				<div class="bar" :style="'width:'+((currentScanBlock+1)/blockchainHeight*100 | 0)+'%'" ><h1>{{(((currentScanBlock+1)/blockchainHeight*1000 | 0) / 10)}}%</h1></div>
 				<label>
 					{{ $t("accountPage.synchronizingBlock.text") }} <span class="currentScanBlock" >{{currentScanBlock+1}}</span>/<span class="blockchainHeight" >{{blockchainHeight}}</span>
 				</label>
