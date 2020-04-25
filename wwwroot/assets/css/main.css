@@ -1530,7 +1530,7 @@ to {
 .field input, .field .subfield, .field select {
   border: 1px solid #f5f5f548;
   color: #f5f5f5;
-  font-family: 'Major Mono Display' !important;
+  
   border-radius: 5px;
   font-size: 14px;
   font-size: 1.4rem;
