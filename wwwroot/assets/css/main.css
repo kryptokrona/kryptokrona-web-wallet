@@ -710,7 +710,7 @@ body.native .indexTab .mainBlock > .actions {
 @media screen and (max-width: 940px) {
   .indexTab .mainBlock > .actions .right {
     float: none;
-    margin-top: 15px; } }
+    margin-top: 1rem; } }
 
 .indexTab .notesBlock {
   position: absolute;
@@ -987,7 +987,7 @@ body {
     background-color: #FBBF2E;
     border-radius: 10px;
     border: none;
-    width: 55%;
+    width: 220px;
     position: relative;
     overflow: hidden;
     box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2);
@@ -1012,8 +1012,8 @@ body {
     z-index: 2147483649;
     background: rgba(0, 0, 0, 0.3);
     opacity: 0.75;
-    -webkit-animation: scanline 6s linear infinite;
-            animation: scanline 6s linear infinite;
+    -webkit-animation: crtBox 6s linear infinite;
+            animation: crtBox 6s linear infinite;
     }
     .crtBox:after {
     top: 0;
@@ -1027,6 +1027,29 @@ body {
     -webkit-animation: crtBox 1s steps(60) infinite;
             animation: crtBox 1s steps(60) infinite;
     }
+
+    @-webkit-keyframes crtBox {
+      0% {
+        -webkit-transform: translate3d(0, 200000%, 0);
+                transform: translate3d(0, 200000%, 0);
+      }
+      }
+      @keyframes crtBox {
+      0% {
+        -webkit-transform: translate3d(0, 200000%, 0);
+                transform: translate3d(0, 200000%, 0);
+      }
+      }
+      @-webkit-keyframes crtBox {
+      0% {
+        background-position: 0 50%;
+      }
+      }
+      @keyframes crtBox {
+      0% {
+        background-position: 0 50%;
+      }
+      }
 
 .panel {
   background: #171416!important;
