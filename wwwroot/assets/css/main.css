@@ -82,7 +82,7 @@ html, body {
   height: 100%;
   min-height: 100%;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
@@ -629,7 +629,10 @@ body.transparent #copyright {
   min-height: 90vh;
   position: relative;
   text-align: center;
-  background: #4a4a4a;
+  background: #080808b9;
+  background-image: -webkit-linear-gradient(#222222b9), #222222b9)), url(../landing/ple.png);
+  background-image: -o-linear-gradient(#222222b9), #222222b9)), url(../landing/ple.png);
+  background-image: linear-gradient(#222222b9), #222222b9)), url(../img/landing/ple.png);
   background-position: center center;
   background-size: cover;
   margin-bottom: 160px; }
@@ -1105,7 +1108,7 @@ body {
   border: none; }
 
 .btn:hover {
-  background-color: #90f2ffbe;
+  background-color: #3636369d;
   color: rgba(0, 0, 0, 0.8); }
 
 .btn.primary {
@@ -1241,6 +1244,7 @@ body {
 .field input, .field .subfield, .field select {
   border: 1px solid #f5f5f548;
   color: #f5f5f5;
+  font-family: 'Major Mono Display' !important;
   border-radius: 5px;
   font-size: 14px;
   font-size: 1.4rem;
