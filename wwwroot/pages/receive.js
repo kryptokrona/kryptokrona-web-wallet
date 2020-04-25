@@ -101,6 +101,9 @@ define(["require", "exports", "../lib/numbersLab/DependencyInjector", "../model/
                 mSize: 10,
                 mPosX: 50,
                 mPosY: 50,
+                fill: '#fff',
+                back: '#4a4a4a',
+                crisp: true,
             });
             $('#qrCodeContainer').html(el);
         };
